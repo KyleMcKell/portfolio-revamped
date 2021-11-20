@@ -1,0 +1,45 @@
+const NORD = {
+	nord0: 'hsl(220, 16%, 22%)',
+	nord1: 'hsl(220, 16%, 27%)',
+	nord2: 'hsl(220, 16%, 32%)',
+	nord3: 'hsl(220, 16%, 36%)',
+	nord4: 'hsl(220, 27%, 88%)',
+	nord5: 'hsl(220, 27%, 92%)',
+	nord6: 'hsl(220, 27%, 94%)',
+	nord7: 'hsl(179, 25%, 65%)',
+	nord8: 'hsl(193, 43%, 67%)',
+	nord9: 'hsl(210, 34%, 63%)',
+	nord10: 'hsl(213, 32%, 52%)',
+	nord11: 'hsl(354, 42%, 56%)',
+	nord12: 'hsl(14, 51%, 63%)',
+	nord13: 'hsl(40, 71%, 73%)',
+	nord14: 'hsl(92, 28%, 65%)',
+	nord15: 'hsl(311, 20%, 63%)',
+};
+
+export const COLORS = {
+	WHITE: 'hsl(220, 100%, 100%)',
+	BLACK: 'hsl(220, 16%, 16%)',
+	GRAY: {
+		100: NORD.nord0,
+		200: NORD.nord1,
+		300: NORD.nord2,
+		400: NORD.nord3,
+		700: NORD.nord4,
+		800: NORD.nord5,
+		900: NORD.nord6,
+	},
+	PRIMARY: NORD.nord8,
+	SECONDARY: NORD.nord7,
+	TERTIARY: {
+		LIGHT: NORD.nord9,
+		DARK: NORD.nord10,
+	},
+	ACCENT: {
+		ERROR: NORD.nord11,
+		DANGER: NORD.nord12,
+		WARNING: NORD.nord13,
+		SUCCESS: NORD.nord14,
+		HIGHLIGHT: NORD.nord15,
+	},
+};
