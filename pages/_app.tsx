@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
 
-import { COLORS } from '../utils';
+import { COLORS, WEIGHTS } from '../utils';
 
 const GlobalStyle = createGlobalStyle`
   /* CSS RESET */
@@ -82,8 +82,11 @@ const GlobalStyle = createGlobalStyle`
 
   /* Base Styles */
   :root {
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'Roboto', Arial, Helvetica, -apple-system, sans-serif;
     --font-family-mono: "Space Mono", monospace;
+    --font-weight-bold: 700;
+    --font-weight-medium: 500;
+    --font-weight-light: 400;
     --color-background: ${COLORS.BLACK};
     --color-text: ${COLORS.WHITE};
     --color-primary: ${COLORS.PRIMARY};
@@ -102,7 +105,6 @@ const GlobalStyle = createGlobalStyle`
     --color-gray-700: ${COLORS.GRAY[700]};
     --color-gray-800: ${COLORS.GRAY[800]};
     --color-gray-900: ${COLORS.GRAY[900]}
-
   }
   html {
     font-family: var(--font-family);

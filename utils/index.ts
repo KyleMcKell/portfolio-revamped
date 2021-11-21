@@ -1,3 +1,3 @@
-import { COLORS } from './COLORS';
+import { COLORS, WEIGHTS } from './styling';
 
-export { COLORS };
+export { COLORS, WEIGHTS };

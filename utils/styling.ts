@@ -39,3 +39,9 @@ export const COLORS = {
 	SUCCESS: NORD_PALETTE.nord14,
 	HIGHLIGHT: NORD_PALETTE.nord15,
 };
+
+export const WEIGHTS = {
+	BOLD: 700,
+	MEDIUM: 500,
+	LIGHT: 400,
+};
