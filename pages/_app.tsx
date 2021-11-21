@@ -1,6 +1,8 @@
 import type { AppProps } from 'next/app';
 import { createGlobalStyle } from 'styled-components';
 
+import { COLORS } from '../utils';
+
 const GlobalStyle = createGlobalStyle`
   /* CSS RESET */
   /* Box sizing rules */
@@ -79,8 +81,32 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Base Styles */
+  :root {
+    --font-family: 'Roboto', sans-serif;
+    --font-family-mono: "Space Mono", monospace;
+    --color-background: ${COLORS.BLACK};
+    --color-text: ${COLORS.WHITE};
+    --color-primary: ${COLORS.PRIMARY};
+    --color-secondary: ${COLORS.SECONDARY};
+    --color-tertiary: ${COLORS.TERTIARY};
+    --color-decorative: ${COLORS.DECORATIVE};
+    --color-error: ${COLORS.ERROR};
+    --color-danger: ${COLORS.DANGER};
+    --color-warning: ${COLORS.WARNING};
+    --color-success: ${COLORS.SUCCESS};
+    --color-highlight: ${COLORS.HIGHLIGHT};
+    --color-gray-100: ${COLORS.GRAY[100]};
+    --color-gray-200: ${COLORS.GRAY[200]};
+    --color-gray-300: ${COLORS.GRAY[300]};
+    --color-gray-400: ${COLORS.GRAY[400]};
+    --color-gray-700: ${COLORS.GRAY[700]};
+    --color-gray-800: ${COLORS.GRAY[800]};
+    --color-gray-900: ${COLORS.GRAY[900]}
+
+  }
   html {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-family);
+    color: var(--color-text);
   }
 `;
 

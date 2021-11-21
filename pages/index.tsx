@@ -2,8 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 
-import { COLORS } from '../utils/COLORS';
-
 const Home: NextPage = () => {
 	return (
 		<Wrapper>
@@ -18,8 +16,9 @@ const Home: NextPage = () => {
 };
 
 const Wrapper = styled.div`
-	background-color: ${COLORS.GRAY[900]};
-	color: ${COLORS.GRAY[100]};
+	font-family: var(--font-family);
+	background-color: var(--color-background);
+	color: var(--color-text);
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;

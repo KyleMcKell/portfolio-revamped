@@ -1,4 +1,4 @@
-const NORD = {
+const NORD_PALETTE = {
 	nord0: 'hsl(220, 16%, 22%)',
 	nord1: 'hsl(220, 16%, 27%)',
 	nord2: 'hsl(220, 16%, 32%)',
@@ -18,28 +18,24 @@ const NORD = {
 };
 
 export const COLORS = {
-	WHITE: 'hsl(220, 100%, 100%)',
+	WHITE: 'hsl(220, 27%, 96%)',
 	BLACK: 'hsl(220, 16%, 16%)',
 	GRAY: {
-		100: NORD.nord0,
-		200: NORD.nord1,
-		300: NORD.nord2,
-		400: NORD.nord3,
-		700: NORD.nord4,
-		800: NORD.nord5,
-		900: NORD.nord6,
+		100: NORD_PALETTE.nord0,
+		200: NORD_PALETTE.nord1,
+		300: NORD_PALETTE.nord2,
+		400: NORD_PALETTE.nord3,
+		700: NORD_PALETTE.nord4,
+		800: NORD_PALETTE.nord5,
+		900: NORD_PALETTE.nord6,
 	},
-	PRIMARY: NORD.nord8,
-	SECONDARY: NORD.nord7,
-	TERTIARY: {
-		LIGHT: NORD.nord9,
-		DARK: NORD.nord10,
-	},
-	ACCENT: {
-		ERROR: NORD.nord11,
-		DANGER: NORD.nord12,
-		WARNING: NORD.nord13,
-		SUCCESS: NORD.nord14,
-		HIGHLIGHT: NORD.nord15,
-	},
+	PRIMARY: NORD_PALETTE.nord8,
+	SECONDARY: NORD_PALETTE.nord7,
+	TERTIARY: NORD_PALETTE.nord9,
+	DECORATIVE: NORD_PALETTE.nord10,
+	ERROR: NORD_PALETTE.nord11,
+	DANGER: NORD_PALETTE.nord12,
+	WARNING: NORD_PALETTE.nord13,
+	SUCCESS: NORD_PALETTE.nord14,
+	HIGHLIGHT: NORD_PALETTE.nord15,
 };
