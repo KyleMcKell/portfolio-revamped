@@ -83,7 +83,8 @@ const GlobalStyle = createGlobalStyle`
   /* Base Styles */
   :root {
     --font-family: 'Roboto', Arial, Helvetica, -apple-system, sans-serif;
-    --font-family-mono: "Space Mono", monospace;
+    --font-family-mono: 'Space Mono', monospace;
+    --font-family-nifty: 'Sriracha', cursive;
     --font-weight-bold: 700;
     --font-weight-medium: 500;
     --font-weight-light: 400;
