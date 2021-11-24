@@ -1,15 +1,15 @@
 import type { AppProps } from 'next/app';
-import { useLayoutEffect, useState } from 'react';
+import { useLayoutEffect, useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 import { darkTheme, lightTheme, GlobalStyle } from '../theme';
+import Header from '../components/Header';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [isMounted, setIsMounted] = useState(false);
-	const [theme, setTheme] = useState(darkTheme);
+	const darkmode = useDarkMode(true);
 
-	const toggleTheme = () => {
-		setTheme(theme.name === 'dark' ? lightTheme : darkTheme);
-	};
+	const theme = darkmode.value ? darkTheme : lightTheme;
 
 	useLayoutEffect(() => {
 		setIsMounted(true);
@@ -18,7 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-			<button onClick={toggleTheme}>Switch Theme</button>
+			<Header darkmode={darkmode} />
 			{isMounted && <Component {...pageProps} />}
 		</ThemeProvider>
 	);
