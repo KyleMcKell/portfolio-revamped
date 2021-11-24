@@ -2,6 +2,7 @@ import 'styled-components';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
+		name: 'dark' | 'light';
 		typography: {
 			fontFamily: string;
 			fontFamilyMono: string;

@@ -2,8 +2,8 @@ import { DefaultTheme } from 'styled-components';
 
 import { WEIGHTS, COLORS } from './stylingConstants';
 
-export const darkTheme: DefaultTheme = {
-	name: 'dark',
+export const lightTheme: DefaultTheme = {
+	name: 'light',
 	typography: {
 		fontFamily: 'Roboto, Arial, Helvetica, -apple-system, sans-serif',
 		fontFamilyMono: 'Space Mono, monospace',
@@ -13,8 +13,8 @@ export const darkTheme: DefaultTheme = {
 		fontWeightBold: WEIGHTS.BOLD,
 	},
 	colors: {
-		backgroundColor: COLORS.OFF_BLACK,
-		textColor: COLORS.OFF_WHITE,
+		backgroundColor: COLORS.OFF_WHITE,
+		textColor: COLORS.OFF_BLACK,
 		primaryColor: COLORS.PRIMARY,
 		secondaryColor: COLORS.SECONDARY,
 		tertiaryColor: COLORS.TERTIARY,
