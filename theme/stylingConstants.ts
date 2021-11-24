@@ -18,8 +18,8 @@ const NORD_PALETTE = {
 };
 
 export const COLORS = {
-	WHITE: 'hsl(220, 27%, 96%)',
-	BLACK: 'hsl(220, 16%, 16%)',
+	OFF_WHITE: 'hsl(220, 27%, 96%)',
+	OFF_BLACK: 'hsl(220, 16%, 16%)',
 	GRAY: {
 		100: NORD_PALETTE.nord0,
 		200: NORD_PALETTE.nord1,

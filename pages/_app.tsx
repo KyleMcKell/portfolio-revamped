@@ -1,7 +1,6 @@
 import type { AppProps } from 'next/app';
-import { createGlobalStyle } from 'styled-components';
-
-import { COLORS, WEIGHTS } from '../utils';
+import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { darkTheme } from '../theme/darkTheme';
 
 const GlobalStyle = createGlobalStyle`
   /* CSS RESET */
@@ -59,44 +58,18 @@ const GlobalStyle = createGlobalStyle`
   }
 
   /* Base Styles */
-  :root {
-    --font-family: 'Roboto', Arial, Helvetica, -apple-system, sans-serif;
-    --font-family-mono: 'Space Mono', monospace;
-    --font-family-nifty: 'Sriracha', cursive;
-    --font-weight-bold: 700;
-    --font-weight-medium: 500;
-    --font-weight-light: 400;
-    --color-background: ${COLORS.BLACK};
-    --color-text: ${COLORS.WHITE};
-    --color-primary: ${COLORS.PRIMARY};
-    --color-secondary: ${COLORS.SECONDARY};
-    --color-tertiary: ${COLORS.TERTIARY};
-    --color-decorative: ${COLORS.DECORATIVE};
-    --color-error: ${COLORS.ERROR};
-    --color-danger: ${COLORS.DANGER};
-    --color-warning: ${COLORS.WARNING};
-    --color-success: ${COLORS.SUCCESS};
-    --color-highlight: ${COLORS.HIGHLIGHT};
-    --color-gray-100: ${COLORS.GRAY[100]};
-    --color-gray-200: ${COLORS.GRAY[200]};
-    --color-gray-300: ${COLORS.GRAY[300]};
-    --color-gray-400: ${COLORS.GRAY[400]};
-    --color-gray-700: ${COLORS.GRAY[700]};
-    --color-gray-800: ${COLORS.GRAY[800]};
-    --color-gray-900: ${COLORS.GRAY[900]}
-  }
   html {
-    font-family: var(--font-family);
-    color: var(--color-text);
+    font-family: ${({ theme }) => theme.typography.fontFamily};
+    color: ${({ theme }) => theme.colors.textColor};
   }
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {
 	return (
-		<>
+		<ThemeProvider theme={darkTheme}>
 			<GlobalStyle />
 			<Component {...pageProps} />
-		</>
+		</ThemeProvider>
 	);
 }
 

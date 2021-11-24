@@ -18,9 +18,7 @@ const Home: NextPage = () => {
 };
 
 const Wrapper = styled.div`
-	font-family: var(--font-family);
-	background-color: var(--color-background);
-	color: var(--color-text);
+	background-color: ${(props) => props.theme.colors.backgroundColor};
 	width: 100%;
 	height: 100%;
 	min-height: 100vh;
