@@ -2,7 +2,7 @@ import 'styled-components';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
-		name: 'dark' | 'light';
+		name: 'light' | 'dark';
 		typography: {
 			fontFamily: string;
 			fontFamilyMono: string;
@@ -13,8 +13,8 @@ declare module 'styled-components' {
 		};
 		colors: {
 			backgroundColor: string;
-			primaryColor: string;
 			textColor: string;
+			primaryColor: string;
 			secondaryColor: string;
 			tertiaryColor: string;
 			decorativeColor: string;

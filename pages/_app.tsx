@@ -1,5 +1,5 @@
 import type { AppProps } from 'next/app';
-import { useLayoutEffect, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import { darkTheme, lightTheme, GlobalStyle } from '../theme';
@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
 	const theme = darkmode.value ? darkTheme : lightTheme;
 
-	useLayoutEffect(() => {
+	useEffect(() => {
 		setIsMounted(true);
 	}, []);
 
