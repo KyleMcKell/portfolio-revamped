@@ -1,4 +1,4 @@
-import { WEIGHTS, COLORS } from './stylingConstants';
+import { WEIGHTS, COLORS } from '@utils/theme/stylingConstants';
 
 export const defaultTheme = {
 	typography: {

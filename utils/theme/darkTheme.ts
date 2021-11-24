@@ -1,7 +1,7 @@
 import { DefaultTheme } from 'styled-components';
-import { defaultTheme } from './defaultTheme';
+import { defaultTheme } from '@utils/theme/defaultTheme';
 
-import { COLORS } from './stylingConstants';
+import { COLORS } from '@utils/theme/stylingConstants';
 
 export const darkTheme: DefaultTheme = {
 	name: 'dark',
