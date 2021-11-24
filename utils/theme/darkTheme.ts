@@ -1,4 +1,4 @@
-import { DefaultTheme } from 'styled-components';
+import type { DefaultTheme } from 'styled-components';
 import { defaultTheme } from '@utils/theme/defaultTheme';
 
 import { COLORS } from '@utils/theme/stylingConstants';

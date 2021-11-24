@@ -1,7 +1,20 @@
 import React from 'react';
 
-interface Props {}
+import Header from '@components/Header';
+import { DarkMode } from 'use-dark-mode';
 
-export const Layout = (props: Props) => {
-	return <div></div>;
+interface Props {
+	children: any;
+	darkmode: DarkMode;
+}
+
+const Layout = ({ darkmode, children }: Props) => {
+	return (
+		<>
+			<Header darkmode={darkmode} />
+			{children}
+		</>
+	);
 };
+
+export default Layout;
