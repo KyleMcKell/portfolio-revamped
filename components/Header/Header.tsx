@@ -2,13 +2,13 @@ import React from 'react';
 import { DarkMode } from 'use-dark-mode';
 
 interface Props {
-	darkmode: DarkMode;
+	darkMode: DarkMode;
 }
 
-const Header = ({ darkmode }: Props) => {
+const Header = ({ darkMode }: Props) => {
 	return (
 		<div>
-			<button onClick={darkmode.toggle}>Switch Theme</button>
+			<button onClick={darkMode.toggle}>Switch Theme</button>
 		</div>
 	);
 };

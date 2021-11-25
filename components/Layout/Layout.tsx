@@ -1,18 +1,18 @@
-import React from 'react';
+import Header from '../Header';
 
-import Header from '@components/Header';
+import React from 'react';
 import { DarkMode } from 'use-dark-mode';
 
 interface Props {
+	darkMode: DarkMode;
 	children: any;
-	darkmode: DarkMode;
 }
 
-const Layout = ({ darkmode, children }: Props) => {
+const Layout = ({ darkMode, children }: Props) => {
 	return (
 		<>
-			<Header darkmode={darkmode} />
-			<main>{children}</main>
+			<Header darkMode={darkMode} />
+			{children}
 		</>
 	);
 };

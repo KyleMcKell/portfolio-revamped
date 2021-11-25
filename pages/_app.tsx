@@ -3,14 +3,13 @@ import { ThemeProvider } from 'styled-components';
 import React from 'react';
 import useDarkMode from 'use-dark-mode';
 
-import { darkTheme, lightTheme, GlobalStyle } from '@utils/theme';
-
-import Layout from '@components/Layout';
+import { darkTheme, lightTheme, GlobalStyle } from '../theme';
+import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
 	const [isMounted, setIsMounted] = React.useState(true);
-	const darkmode = useDarkMode(true);
-	const { value } = darkmode;
+	const darkMode = useDarkMode(true);
+	const { value } = darkMode;
 	const theme = value ? darkTheme : lightTheme;
 
 	React.useEffect(() => {
@@ -21,7 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
 			{isMounted && (
-				<Layout darkmode={darkmode}>
+				<Layout darkMode={darkMode}>
 					<Component {...pageProps} />
 				</Layout>
 			)}

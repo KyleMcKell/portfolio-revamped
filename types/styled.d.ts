@@ -1,8 +1,9 @@
 import 'styled-components';
+import { ThemeType } from '../contexts/ThemeProvider';
 
 declare module 'styled-components' {
 	export interface DefaultTheme {
-		name: 'light' | 'dark';
+		name: ThemeType;
 		typography: {
 			fontFamily: string;
 			fontFamilyMono: string;
