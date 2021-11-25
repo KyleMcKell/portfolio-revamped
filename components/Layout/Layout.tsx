@@ -12,7 +12,7 @@ const Layout = ({ darkmode, children }: Props) => {
 	return (
 		<>
 			<Header darkmode={darkmode} />
-			{children}
+			<main>{children}</main>
 		</>
 	);
 };
