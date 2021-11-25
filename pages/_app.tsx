@@ -7,23 +7,26 @@ import { darkTheme, lightTheme, GlobalStyle } from '../theme';
 import Layout from '../components/Layout';
 
 function MyApp({ Component, pageProps }: AppProps) {
-	const [isMounted, setIsMounted] = React.useState(true);
+	// const [isMounted, setIsMounted] = React.useState(false);
 	const darkMode = useDarkMode(true);
 	const { value } = darkMode;
 	const theme = value ? darkTheme : lightTheme;
 
-	React.useEffect(() => {
-		setIsMounted(true);
-	}, []);
+	// React.useEffect(() => {
+	// 	setIsMounted(true);
+	// }, []);
 
 	return (
 		<ThemeProvider theme={theme}>
 			<GlobalStyle />
-			{isMounted && (
+			{/* {isMounted && (
 				<Layout darkMode={darkMode}>
 					<Component {...pageProps} />
 				</Layout>
-			)}
+			)} */}
+			<Layout darkMode={darkMode}>
+				<Component {...pageProps} />
+			</Layout>
 		</ThemeProvider>
 	);
 }
