@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-sync-scripts */
 import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
@@ -12,7 +11,6 @@ class MyDocument extends Document {
 					/>
 				</Head>
 				<body>
-					<script src="noflash.js" />
 					<Main />
 					<NextScript />
 				</body>
