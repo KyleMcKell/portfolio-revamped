@@ -15,6 +15,9 @@ const NORD_PALETTE = {
 	nord13: 'hsl(40, 71%, 73%)',
 	nord14: 'hsl(92, 28%, 65%)',
 	nord15: 'hsl(311, 20%, 63%)',
+	// Custom Nord Properties
+	nord16: 'hsl(220, 16%, 50%)',
+	nord17: 'hsl(220, 22%, 65%)',
 };
 
 export const COLORS = {
@@ -25,6 +28,8 @@ export const COLORS = {
 		200: NORD_PALETTE.nord1,
 		300: NORD_PALETTE.nord2,
 		400: NORD_PALETTE.nord3,
+		500: NORD_PALETTE.nord16,
+		600: NORD_PALETTE.nord17,
 		700: NORD_PALETTE.nord4,
 		800: NORD_PALETTE.nord5,
 		900: NORD_PALETTE.nord6,
@@ -41,7 +46,13 @@ export const COLORS = {
 };
 
 export const WEIGHTS = {
+	BLACK: 900,
+	EXTRA_BOLD: 800,
 	BOLD: 700,
+	SEMI_BOLD: 600,
 	MEDIUM: 500,
-	LIGHT: 400,
+	REGULAR: 400,
+	LIGHT: 300,
+	EXTRA_LIGHT: 200,
+	THIN: 100,
 };

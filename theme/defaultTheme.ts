@@ -2,12 +2,18 @@ import { WEIGHTS, COLORS } from './stylingConstants';
 
 export const defaultTheme = {
 	typography: {
-		fontFamily: 'Roboto, Arial, Helvetica, -apple-system, sans-serif',
-		fontFamilyMono: 'Space Mono, monospace',
+		fontFamily: 'Rubik, Helvetica, Arial, sans-serif',
+		fontFamilyMono: 'Roboto Mono, monospace',
 		fontFamilyNifty: 'Sriracha, cursive',
+		fontWeightThin: WEIGHTS.THIN,
+		fontWeightExtraLight: WEIGHTS.EXTRA_LIGHT,
 		fontWeightLight: WEIGHTS.LIGHT,
+		fontWeightRegular: WEIGHTS.REGULAR,
 		fontWeightMedium: WEIGHTS.MEDIUM,
+		fontWeightSemiBold: WEIGHTS.SEMI_BOLD,
 		fontWeightBold: WEIGHTS.BOLD,
+		fontWeightExtraBold: WEIGHTS.EXTRA_BOLD,
+		fontWeightBlack: WEIGHTS.BLACK,
 	},
 	colors: {
 		primaryColor: COLORS.PRIMARY,
@@ -23,6 +29,8 @@ export const defaultTheme = {
 		gray200: COLORS.GRAY[200],
 		gray300: COLORS.GRAY[300],
 		gray400: COLORS.GRAY[400],
+		gray500: COLORS.GRAY[500],
+		gray600: COLORS.GRAY[600],
 		gray700: COLORS.GRAY[700],
 		gray800: COLORS.GRAY[800],
 		gray900: COLORS.GRAY[900],
