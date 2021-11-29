@@ -12,7 +12,7 @@ const Layout = ({ darkMode, children }: Props) => {
 	return (
 		<LayoutWrapper>
 			{/* <Header darkMode={darkMode} /> */}
-			<ChildrenWrapper>{children}</ChildrenWrapper>
+			<PageWrapper>{children}</PageWrapper>
 		</LayoutWrapper>
 	);
 };
@@ -23,7 +23,7 @@ const LayoutWrapper = styled.div`
 	flex-direction: column;
 `;
 
-const ChildrenWrapper = styled.div`
+const PageWrapper = styled.div`
 	flex: 1;
 `;
 
