@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styled from 'styled-components';
 
-const Text: NextPage = () => {
+const Test: NextPage = () => {
 	return (
 		<Wrapper>
 			<Head>
@@ -21,18 +21,14 @@ const Text: NextPage = () => {
 					facilisis ultrices. Morbi sem eros, accumsan bibendum justo sit amet,
 					rhoncus ullamcorper odio. Mauris in sagittis nisi. Nunc vitae quam ac
 					ante convallis faucibus quis interdum ipsum. Integer tempus felis
-					vitae molestie tincidunt.{' '}
-					<NiftyText>
-						Aenean ut laoreet leo, non lacinia augue. Quisque posuere quam eget
-						interdum ultricies.
-					</NiftyText>{' '}
-					Donec sed viverra libero, et consequat leo. Vivamus mollis nunc vitae
-					libero viverra vehicula. Proin vulputate nunc lectus, sed mollis velit
-					feugiat nec. Nullam vel lectus at ex posuere viverra non mollis enim.
-					Fusce efficitur, neque ac porttitor aliquam, dolor leo ultricies enim,
-					ac facilisis purus dui ac sem. Sed vehicula vitae arcu vel euismod.
+					vitae molestie tincidunt. Donec sed viverra libero, et consequat leo.
+					Vivamus mollis nunc vitae libero viverra vehicula. Proin vulputate
+					nunc lectus, sed mollis velit feugiat nec. Nullam vel lectus at ex
+					posuere viverra non mollis enim. Fusce efficitur, neque ac porttitor
+					aliquam, dolor leo ultricies enim, ac facilisis purus dui ac sem. Sed
+					vehicula vitae arcu vel euismod.
 				</NormalText>
-				<MonoText>
+				{/* <MonoText>
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec varius
 					posuere mattis. Donec dignissim tortor vel laoreet venenatis. Fusce eu
 					sem non dui dignissim fermentum in eget nunc. Pellentesque porttitor
@@ -46,7 +42,7 @@ const Text: NextPage = () => {
 					Nullam vel lectus at ex posuere viverra non mollis enim. Fusce
 					efficitur, neque ac porttitor aliquam, dolor leo ultricies enim, ac
 					facilisis purus dui ac sem. Sed vehicula vitae arcu vel euismod.
-				</MonoText>
+				</MonoText> */}
 			</MaxWidthWrapper>
 		</Wrapper>
 	);
@@ -56,7 +52,6 @@ const Wrapper = styled.div`
 	background-color: ${({ theme }) => theme.colors.backgroundColor};
 	width: 100%;
 	height: 100%;
-	min-height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -81,8 +76,13 @@ const NiftyText = styled.span`
 	font-weight: ${({ theme }) => theme.typography.fontWeightRegular};
 `;
 
-const MonoText = styled.p`
+const MonoText = styled.div`
 	font-family: ${({ theme }) => theme.typography.fontFamilyMono};
+	border-radius: 8px;
+	padding: 1rem;
+	font-size: 16px;
+	background-color: ${({ theme }) => theme.colors.gray100};
+	color: ${({ theme }) => theme.colors.gray800};
 `;
 
-export default Text;
+export default Test;
